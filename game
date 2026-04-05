@@ -72,8 +72,6 @@ def game_over_screen(screen, score):
 running = True
 
 while running:
-
-    # 🔁 СБРОС ИГРЫ
     game_state = {
         'score': 0,
         "lives": 3,
@@ -86,7 +84,6 @@ while running:
     basket_x = screen_width // 2 - basket_w // 2
     frame_count = 0
 
-    # 🎮 ИГРА
     while not game_state['game_over']:
         screen.fill(white)
 
